@@ -1,7 +1,5 @@
 TARGET = stwitch
 
-FFMPEG = "`which ffmpeg`"
-
 CC = gcc
 CFLAGS = -Wall -I. -std=c11 -D _XOPEN_SOURCE -D FFMPEG=$(FFMPEG) `pkg-config --cflags gtk+-3.0`
 
